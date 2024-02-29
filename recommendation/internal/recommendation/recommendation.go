@@ -54,7 +54,7 @@ func (svc *Service) Get(ctx context.Context, tripStart time.Time, tripEnd time.T
 	}
 
 	tripDuration := math.Round(float64(tripEnd.Sub(tripStart).Hours()) / 24)
-	lowestPrice := money.NewFromFloat(99999999, "GBP")
+	lowestPrice := money.NewFromFloat(999999999, "GBP")
 
 	var cheapestTrip *Option
 	for _, option := range opts {
